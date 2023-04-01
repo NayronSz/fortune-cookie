@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+
+  font-size: 1.6rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+main .first-screen {
+  width: 42rem;
+  height: 55vh;
+  background: #ffffff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+main .hide {
+  display: none;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+}
+h1,
+.first-screen p {
+  color: #34355b;
+}
+
+.first-screen h1 {
+  width: 23rem;
+  margin: 0 auto;
+  padding: 4.8rem 0 2.1rem;
+}
+
+.first-screen p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+#fortune-cookie-img {
+  margin-top: 3rem;
+}
+
+#fortune-cookie-img:hover {
+  animation: cookieShake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.second-screen {
+  width: 42rem;
+  height: 70vh;
+  background: #ffffff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.second-screen h1 {
+  width: 27rem;
+  margin: 0 auto;
+
+  padding: 4.8rem 0 1.7rem;
+}
+
+.text-fortune-area {
+  margin-bottom: 2.7rem;
+}
+
+#text-fortune {
+  width: 30rem;
+  min-height: 100%;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  color: #000000;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+
+  margin: 0 auto;
+  padding: 1rem;
+
+  animation: imgAppear 1.5s forwards;
+}
+
+#opened-cookie {
+  margin: 1.8rem 0 1rem;
+}
+
+#btn-another-cookie {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: #ff9500;
+
+  margin: 2.8rem 0 1rem;
+  padding: 1.6rem;
+
+  border-radius: 0.4rem;
+  border: none;
+}
+
+#btn-another-cookie:hover {
+  background: #8e5506;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes cookieShake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes imgAppear {
+  from {
+    scale: 0.1;
+    opacity: 0;
+    transform: translateY(50rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0.5rem);
+  }
+}

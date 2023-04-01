@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fortune Cookie!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="first-screen ">
+        <h1>Qual é a sua sorte de hoje?</h1>
+        <p>Abra o biscoito e descubra!</p>
+        <img
+          src="./assets/fortune-cookie.png"
+          alt="A fortune cookie closed image"
+          id="fortune-cookie-img"
+        />
+      </div>
+      <div class="second-screen hide">
+        <h1>Aqui está a sua sorte de hoje:</h1>
+        <div class="text-fortune-area">
+          <div id="text-fortune">Textos</div>
+        </div>
+        <img
+          src="./assets/opened-cookie.png"
+          alt="A fortune cookie opened image"
+          id="opened-cookie"
+        />
+        <form>
+          <button id="btn-another-cookie">Abrir outro biscoito</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
