@@ -4,7 +4,6 @@ const imgCookieOpened = document.querySelector("#fortune-cookie-img");
 const firstScreen = document.querySelector(".first-screen");
 const secondScreen = document.querySelector(".second-screen");
 const textFortune = document.querySelector("#text-fortune");
-let currentText = 0;
 
 const textList = [
   "Não se desespere quando a caminhada estiver difícil, é sinal de que você está no caminho certo.",
